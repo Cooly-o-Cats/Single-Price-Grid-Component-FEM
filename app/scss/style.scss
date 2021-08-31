@@ -3,17 +3,17 @@
 
 *,
 *::before,
-*::after{
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-body{
+body {
     font-family: $font-karla;
     min-height: 100vh;
     padding: 0;
@@ -22,70 +22,70 @@ body{
     justify-content: center;
     background-color: $light-gray;
 
-    main{
+    main {
         max-width: 80vw;
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .card{
+        .card {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat(3, .8fr);
+            grid-template-rows: repeat(3, 0.8fr);
             column-gap: 0;
-            row-gap: 0; 
-            border-radius: .625rem;
+            row-gap: 0;
+            border-radius: 0.625rem;
             overflow: hidden;
             max-width: 40rem;
             margin: 4.375rem 0 4.375rem 0;
 
-            @include u.breakpoint(medium){
+            @include u.breakpoint(medium) {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
             }
 
-            &__top-row{
+            &__top-row {
                 grid-area: 1 / 1 / 2 / 2;
                 background-color: white;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
-                @include u.breakpoint(medium){
+                @include u.breakpoint(medium) {
                     grid-area: 1 / 1 / 2 / 3;
                     justify-content: flex-start;
                 }
 
-                .top-row__main-text{
+                .top-row__main-text {
                     margin: 2.1875rem 1.875rem 1.875rem 1.3125rem;
 
-                    h1{
+                    h1 {
                         font-weight: 700;
                         font-size: 1.3125rem;
                         letter-spacing: -4%;
                         color: $cyan;
                         margin-bottom: 1.875rem;
 
-                        @include u.breakpoint(medium){
+                        @include u.breakpoint(medium) {
                             font-size: 1.4125rem;
                         }
                     }
 
-                    h2{
+                    h2 {
                         font-weight: 700;
                         font-size: 1rem;
                         line-height: 1.16875rem;
                         letter-spacing: -4%;
                         color: $bright-yellow;
-                        margin-bottom: .9625rem;
+                        margin-bottom: 0.9625rem;
 
-                        @include u.breakpoint(medium){
+                        @include u.breakpoint(medium) {
                             font-size: 1.05rem;
                         }
                     }
 
-                    p{
+                    p {
                         font-weight: 400;
                         font-size: 15px;
                         line-height: 1.5625rem;
@@ -95,17 +95,17 @@ body{
 
                     h1,
                     h2,
-                    p{
+                    p {
                         max-width: 15.625rem;
 
-                        @include u.breakpoint(medium){
+                        @include u.breakpoint(medium) {
                             max-width: 85%;
                         }
                     }
                 }
             }
 
-            &__bottom-left{
+            &__bottom-left {
                 grid-area: 2 / 1 / 3 / 2;
                 background-color: $cyan;
                 display: flex;
@@ -115,18 +115,18 @@ body{
                 height: 100%;
                 margin-bottom: 0;
 
-                @include u.breakpoint(medium){
+                @include u.breakpoint(medium) {
                     grid-area: 2 / 1 / 3 / 2;
                 }
 
-                .bottom-left__main-text{
+                .bottom-left__main-text {
                     margin: 1.5625rem 3.125rem 1.5625rem 1.5625rem;
 
-                    @include u.breakpoint(medium){
+                    @include u.breakpoint(medium) {
                         max-width: 80%;
                     }
 
-                    h2{
+                    h2 {
                         font-weight: 700;
                         font-size: 1.3125rem;
                         letter-spacing: -4%;
@@ -135,13 +135,13 @@ body{
                         margin-bottom: 1.25rem;
                     }
 
-                    .main-text__money-info{
+                    .main-text__money-info {
                         display: flex;
                         align-items: center;
                         justify-content: flex-start;
-                        margin-bottom: .625rem;
+                        margin-bottom: 0.625rem;
 
-                        .money{
+                        .money {
                             font-weight: 700;
                             font-size: 2.125rem;
                             letter-spacing: -5.5%;
@@ -149,17 +149,17 @@ body{
                             opacity: 90%;
                         }
 
-                        .label{
+                        .label {
                             font-weight: 400;
                             font-size: 1rem;
                             letter-spacing: -3%;
                             color: hsla(182, 58%, 63%, 1);
-                            margin-top: .3rem;
-                            margin-left: .7375rem;
+                            margin-top: 0.3rem;
+                            margin-left: 0.7375rem;
                         }
                     }
 
-                    p{
+                    p {
                         font-weight: 400;
                         font-size: 1.0625rem;
                         letter-spacing: -4%;
@@ -168,13 +168,13 @@ body{
                     }
                 }
 
-                button{
+                button {
                     height: 3.125rem;
                     width: 80%;
-                    border-radius: .35rem;
+                    border-radius: 0.35rem;
                     border: none;
                     background-color: $bright-yellow;
-                    box-shadow: 0px 6px 12px #207D7C;
+                    box-shadow: 0px 6px 12px #207d7c;
                     cursor: pointer;
 
                     font-family: $font-karla;
@@ -184,7 +184,7 @@ body{
                     color: hsla(0, 0, 100%, 76%);
                     margin-bottom: 1.5625rem;
 
-                    @include u.breakpoint(medium){
+                    @include u.breakpoint(medium) {
                         width: 75%;
                         align-self: flex-start;
                         margin-left: 1.5625rem;
@@ -192,16 +192,16 @@ body{
                 }
             }
 
-            &__bottom-right{
+            &__bottom-right {
                 grid-area: 3 / 1 / 4 / 2;
-                background-color: #4ABEBD;
+                background-color: #4abebd;
                 margin-top: 0;
 
-                @include u.breakpoint(medium){
+                @include u.breakpoint(medium) {
                     grid-area: 2 / 2 / 3 / 3;
                 }
 
-                .bottom-right__main-text{
+                .bottom-right__main-text {
                     margin-bottom: 1.5625rem;
                     margin-left: 1.25rem;
                     height: 100%;
@@ -209,7 +209,7 @@ body{
                     flex-direction: column;
                     justify-content: center;
 
-                    h2{
+                    h2 {
                         font-weight: 700;
                         font-size: 1.5125rem;
                         letter-spacing: -4%;
@@ -218,15 +218,14 @@ body{
                         margin-bottom: 1.25rem;
                     }
 
-                    .main-text__feature-list{
-
-                        li{
+                    .main-text__feature-list {
+                        li {
                             font-weight: 400;
-                            font-size: .875rem;
+                            font-size: 0.875rem;
                             letter-spacing: 1%;
-                            color: #B6F9FF;
+                            color: #b6f9ff;
                             opacity: 83%;
-                            margin-bottom: .325rem;
+                            margin-bottom: 0.325rem;
                         }
                     }
                 }
