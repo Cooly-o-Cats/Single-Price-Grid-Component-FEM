@@ -38,6 +38,7 @@ body{
             border-radius: .625rem;
             overflow: hidden;
             max-width: 40rem;
+            margin: 4.375rem 0 4.375rem 0;
 
             @include u.breakpoint(medium){
                 grid-template-columns: repeat(2, 1fr);
