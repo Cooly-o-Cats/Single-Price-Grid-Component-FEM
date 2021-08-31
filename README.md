@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FEM Solution](https://your-solution-url.com)
+- Solution URL: [FEM Solution](https://www.frontendmentor.io/solutions/css-grid-scss-and-mobilefirst-patr6LwKm)
 - Live Site URL: [https://fem-singlepricegridcomponent.netlify.app/](https://fem-singlepricegridcomponent.netlify.app/)
 
 ## My process
